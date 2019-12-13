@@ -222,6 +222,7 @@ uint8_t digitalRaw(uint16_t Thrs2, uint16_t Thrs1, uint16_t Thrs0){
 
 	return resultDigital;
 }
+
 uint8_t decision(uint8_t in_digitalRaw){
 	uint8_t result;
 	if(in_digitalRaw == 0x01)

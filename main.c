@@ -16,13 +16,12 @@ uint8_t low, high;
 unsigned char buff;
 
 int main(void){
-	myADC_init();
+	ADC_init();
 	SPI_SlaveInit();
 	USART_Init();
 	DDRA = 0xFF;
 	while(1){
-		SmartSensor();
+		smartsensor();
 //		_delay_ms(100);
 	}
 }
-

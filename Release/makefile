@@ -8,6 +8,11 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include spi/subdir.mk
+-include smartsensor/subdir.mk
+-include decision/subdir.mk
+-include UART/subdir.mk
+-include ADC/subdir.mk
 -include subdir.mk
 -include objects.mk
 
